@@ -10,6 +10,6 @@ Keywords: Logit Regression Model, Dummy Variables, ROC, AUC, Confusion Matrix
 
 Author: Yufang Yan, Christoph Linne, Xun Gong,  Emil Brodersen
 
-Datafile: balancedTrain.csv, bankclean_test.csv, bank.train.dummy.csv,  bank.test.dummy.csv, ROC_logit_testdata.jpeg,ROC_logit_traindata.jpeg,
+Datafile: balancedTrain.csv, bankclean_test.csv, bank.train.dummy.csv,  bank.test.dummy.csv, ROC_logit_testdata.jpeg,ROC_logit_traindata.jpeg
 
 Output: logit model trained on balancedTrain data, and its performance evaluation on both train and test dataset. 
