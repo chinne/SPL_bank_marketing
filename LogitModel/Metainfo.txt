@@ -1,7 +1,7 @@
 
 Name of Quantlet: LogitModel
 
-Published in: 'Statistical programming languages - Student Project on ''Model Selection for Bank Telemarketing'' '
+Published in: Statistical programming languages
 
 Description: 'A binary logit analysis is expected to yield the relationship between each predictor variable and the target variable, considering other predictor variables hold still. Additionally, comparing predicted result with real result, the report also expect to evaluate how good the model is. 
 An AUC index and an ROC curve are also expected to evaluate how well the logistic model works with future data.'
