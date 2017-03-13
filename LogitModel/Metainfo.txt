@@ -3,13 +3,12 @@ Name of Quantlet: LogitModel
 
 Published in: Statistical programming languages
 
-Description: 'A binary logit analysis is expected to yield the relationship between each predictor variable and the target variable, considering other predictor variables hold still. Additionally, comparing predicted result with real result, the report also expect to evaluate how good the model is. 
-An AUC index and an ROC curve are also expected to evaluate how well the logistic model works with future data.'
+Description: A binary logit analysis is expected to yield the relationship between each predictor variable and the target variable, considering other predictor variables hold still. Additionally, comparing predicted result with real result, the report also expect to evaluate how good the model is. An AUC index and an ROC curve are also expected to evaluate how well the logistic model works with future data.
 
 Keywords: Logit Regression Model, Dummy Variables, ROC, AUC, Confusion Matrix
 
 Author: Yufang Yan, Christoph Linne, Xun Gong,  Emil Brodersen
 
-Datafile: balancedTrain.csv, bankclean_test.csv, bank.train.dummy.csv,  bank.test.dummy.csv, ROC_logit_testdata.jpeg,ROC_logit_traindata.jpeg
+Datafile: balancedTrain.csv, bankclean_test.csv, bank.train.dummy.csv,  bank.test.dummy.csv, ROC_logit_testdata.jpg, ROC_logit_traindata.jpg
 
 Output: logit model trained on balancedTrain data, and its performance evaluation on both train and test dataset. 
