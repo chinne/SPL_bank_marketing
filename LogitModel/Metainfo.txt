@@ -1,5 +1,5 @@
 
-Name of Quantlet: SPL_Data_Imputing_MICE
+Name of Quantlet: LogitModel
 
 Published in: 'Statistical programming languages - Student Project on ''Model Selection for Bank Telemarketing'' '
 
