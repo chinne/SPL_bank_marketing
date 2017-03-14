@@ -10,4 +10,4 @@ Author: Yufang Yan, Christoph Linne, Xun Gong,  Emil Brodersen
 
 Datafile: balancedTrain.csv
 
-Output: ROC graph: SPL_NeuralNetwork1.pdf
+Output: ROC graph SPL_NeuralNetwork1.pdf
