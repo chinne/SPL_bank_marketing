@@ -1,0 +1,106 @@
+\begin{thebibliography}{}
+
+\bibitem[Baesens et~al., 2003]{baesens2003using}
+Baesens, B., Setiono, R., Mues, C., and Vanthienen, J. (2003).
+\newblock Using neural network rule extraction and decision tables for
+  credit-risk evaluation.
+\newblock {\em Management science}, 49(3):312--329.
+
+\bibitem[Banfield et~al., 2007]{4016560}
+Banfield, R.~E., Hall, L.~O., Bowyer, K.~W., and Kegelmeyer, W.~P. (2007).
+\newblock A comparison of decision tree ensemble creation techniques.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  29(1):173--180.
+
+\bibitem[Breiman, 2001]{Breiman2001}
+Breiman, L. (2001).
+\newblock Random forests.
+\newblock {\em Machine Learning}, 45(1):5--32.
+
+\bibitem[Chawla, 2002]{smote}
+Chawla (2002).
+\newblock Smote: Synthetic minority over-sampling technique.
+
+\bibitem[Fawcett, 2006]{tom2006an}
+Fawcett, T. (2006).
+\newblock An introduction to roc analysis.
+\newblock {\em Pattern Recognition Letters}, 27(8):861--874.
+
+\bibitem[Hornik et~al., 1989]{hornik1989multilayer}
+Hornik, K., Stinchcombe, M., and White, H. (1989).
+\newblock Multilayer feedforward networks are universal approximators.
+\newblock {\em Neural networks}, 2(5):359--366.
+
+\bibitem[Kuhn and Johnson, 2016]{max2016applied}
+Kuhn, M. and Johnson, K. (2016).
+\newblock {\em applied predictive modeling}.
+\newblock Springerl.
+
+\bibitem[Martens et~al., 2011]{david2011performance}
+Martens, D., Vanthienen, J., Verbeke, W., and Baesens, B. (2011).
+\newblock Performance of classification models from a user perspective.
+\newblock {\em Decision Support Systems}, 51(4):782--793.
+
+\bibitem[McCullagh and Nelder, 1982]{p1982generalized}
+McCullagh, P. and Nelder, J. (1982).
+\newblock {\em Generalized Linear Models}.
+\newblock Chapman \& Hall.
+
+\bibitem[Moro et~al., 2014]{moro2014data}
+Moro, S., Cortez, P., and Rita, P. (2014).
+\newblock A data-driven approach to predict the success of bank telemarketing.
+\newblock {\em Decision Support Systems}, 62:22--31.
+
+\bibitem[Nobibon et~al., 2011]{nobibon2011optimization}
+Nobibon, F.~T., Leus, R., and Spieksma, F.~C. (2011).
+\newblock Optimization models for targeted offers in direct marketing: Exact
+  and heuristic algorithms.
+\newblock {\em European Journal of Operational Research}, 210(3):670--683.
+
+\bibitem[Provost and Fawcett, 2013]{provost2013data}
+Provost, F. and Fawcett, T. (2013).
+\newblock {\em Data Science for Business: What you need to know about data
+  mining and data-analytic thinking}.
+\newblock " O'Reilly Media, Inc.".
+
+\bibitem[Quinlan, 1988]{quinlan}
+Quinlan (1988).
+\newblock {\em Induction of Decision Trees. Machine Learning 1}.
+\newblock 81-106, Kluwer Academic Publishers.
+
+\bibitem[Rubin, 1987]{DB1987multiple}
+Rubin, D. (1987).
+\newblock {\em Multiple imputation for nonresponse in surveys}.
+\newblock Wiley.
+
+\bibitem[Rust et~al., 2010]{rust2010rethinking}
+Rust, R.~T., Moorman, C., and Bhalla, G. (2010).
+\newblock Rethinking marketing.
+\newblock {\em Harvard business review}, 88(1/2):94--101.
+
+\bibitem[Sharfer, 1997]{JL1997analysis}
+Sharfer, J. (1997).
+\newblock {\em Analysis of incomplete multivariate data}.
+\newblock Chapman \& Hall.
+
+\bibitem[Shiffman et~al., 2012]{shiffman2012nature}
+Shiffman, D., Fry, S., and Marsh, Z. (2012).
+\newblock {\em The nature of code}.
+\newblock D. Shiffman.
+
+\bibitem[Terry, 2015]{terry}
+Terry, M.~T. (2015).
+\newblock An introduction to recursive partitioning.
+
+\bibitem[van Buuren, 2007]{stef2007multiple}
+van Buuren, S. (2007).
+\newblock ``multiple imputation of discrete and continuous data by fully
+  conditional specification.
+\newblock {\em Statistical Methods in Medical Research}, 16(3):219--242.
+
+\bibitem[van Buuren and Groothuis-Oudshoorn, 2015]{stef2015mice}
+van Buuren, S. and Groothuis-Oudshoorn, K. (2015).
+\newblock Mice: Multivariate imputation by chained equations in r.
+\newblock {\em Journal of Statistical Software}, 10(2):1--67.
+
+\end{thebibliography}
