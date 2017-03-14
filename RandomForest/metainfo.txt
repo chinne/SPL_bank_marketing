@@ -1,1 +1,14 @@
 
+Name of Quantlet: RandomForest
+
+Published in: Statistical programming languages
+
+Description: Random forest prediction based on the mlr package and h2o framework.
+
+Keywords: Random Forest Model, h2o, mlr, AUC, ROC
+
+Author: Yufang Yan, Christoph Linne, Xun Gong, Emil Brodersen
+
+Datafile: 
+
+Output: Random forest model trained on balancedTrain data, and its performance evaluation on both train and test dataset. 
