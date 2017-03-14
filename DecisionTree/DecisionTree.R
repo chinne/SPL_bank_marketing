@@ -22,9 +22,9 @@ bank = bank[, -1]
 # split the data for training and testing
 
 set.seed(124)
-n <- nrow(bank)
-sample.size <- ceiling(n * 0.8)
-idx.train <- sample(n, sample.size)
+n = nrow(bank)
+sample.size = ceiling(n * 0.8)
+idx.train = sample(n, sample.size)
 
 data_train = bank[idx.train, ]
 data_test = bank[-idx.train, ]
@@ -43,7 +43,7 @@ levels(balancedTrain$default) = levels(bank$default)
 rpart.control = rpart.control(minsplit = 5, minbucket = round(5/3), maxdepth = 4, 
     cp = 0.001)
 # decision tree model
-dtm <- rpart(y ~ ., data = balancedTrain, method = "class", parms = list(split = "information"), 
+dtm = rpart(y ~ ., data = balancedTrain, method = "class", parms = list(split = "information"), 
     control = rpart.control)
 
 # plot the decision tree model
