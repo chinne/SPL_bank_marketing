@@ -35,11 +35,11 @@ library(mice)
 # Data Imputing for Train Dataset
 tempData1 <- mice(bank_train,m=5,maxit=10,meth="polyreg",seed=500,diagnostics=True)
 bankclean_train <- complete(tempData1,1)
-write.csv(bankclean_train, "bankclean_train.csv")
+write.csv(bankclean_train, "bankclean_train.csv", row.names=FALSE)
 # Data Imputing for Test Dataset
 tempData2 <- mice(bank_test,m=5,maxit=10,meth="polyreg",seed=500,diagnostics=True)
 pred <- tempData2$predictorMatrix
 pred[,"y"] <- 0
 tempData3 <- mice(bank_test, pred=pred, pri=F)
 bankclean_test <- complete(tempData3,1)
-write.csv(bankclean_test, "bankclean_test.csv")
+write.csv(bankclean_test, "bankclean_test.csv", row.names=FALSE)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.12)  14 MAR 2017 19:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.12)  14 MAR 2017 21:50
 entering extended mode
 **./Prediction-model-selection-for-telemarketing_report.tex
 (Prediction-model-selection-for-telemarketing_report.tex
@@ -459,34 +459,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 118--121
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 124--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--133
-
- []
-
-
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 142.
+(amsmath)                trying to recover with `aligned' on input line 136.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 143--145
+Underfull \hbox (badness 10000) in paragraph at lines 137--139
 
  []
 
 [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 151.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 145.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
 
  []
 
@@ -497,33 +497,35 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 177--179
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
 
  []
 
 
 Package natbib Warning: Citation `Breiman96' on page 5 undefined on input line 
-184.
+178.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 177--181
+
+ []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 189--190
+Underfull \hbox (badness 10000) in paragraph at lines 201--203
 
  []
 
 [6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 256--258
+Underfull \hbox (badness 10000) in paragraph at lines 247--249
 
  []
 
-
-Underfull \vbox (badness 2376) has occurred while \output is active []
-
- [9]
+[9]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
@@ -536,8 +538,7 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
-
-[10]
+ [10]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ò in font cmr12!
@@ -545,22 +546,26 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
  [11]
-Underfull \hbox (badness 10000) in paragraph at lines 339--341
+Underfull \hbox (badness 10000) in paragraph at lines 328--330
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 342--343
-
- []
-
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+Underfull \hbox (badness 10000) in paragraph at lines 331--332
 
  []
 
 
-Overfull \hbox (1.1727pt too wide) in paragraph at lines 360--383
+Underfull \vbox (badness 5681) has occurred while \output is active []
+
+ [12]
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
+
+ []
+
+
+Overfull \hbox (1.1727pt too wide) in paragraph at lines 349--372
  [][] 
  []
 
@@ -568,136 +573,132 @@ Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
+Underfull \hbox (badness 10000) in paragraph at lines 375--376
 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 398--399
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
 
-<MVP.jpeg, id=364, 953.06062pt x 364.36125pt>
+<MVP.jpeg, id=367, 953.06062pt x 364.36125pt>
 File: MVP.jpeg Graphic file (type jpg)
  <use MVP.jpeg>
-Package pdftex.def Info: MVP.jpeg used on input line 405.
+Package pdftex.def Info: MVP.jpeg used on input line 394.
 (pdftex.def)             Requested size: 397.48499pt x 151.96321pt.
 
-Overfull \hbox (7.48499pt too wide) in paragraph at lines 405--406
+Overfull \hbox (7.48499pt too wide) in paragraph at lines 394--395
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 411--412
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
 [15]
-Underfull \hbox (badness 10000) in paragraph at lines 435--437
+Underfull \hbox (badness 10000) in paragraph at lines 424--426
 
  []
 
 [16 <./MVP.jpeg>]
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
+Underfull \hbox (badness 10000) in paragraph at lines 429--430
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+Underfull \hbox (badness 10000) in paragraph at lines 433--434
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 448--449
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
 [17]
-Underfull \hbox (badness 10000) in paragraph at lines 520--523
-
+Overfull \hbox (1.00983pt too wide) in paragraph at lines 484--485
+\OT1/cmr/m/n/12 The bal-anc-ing tech-nique is only used on train dataset rather
+ than test dataset.
  []
 
 [18]
-Underfull \hbox (badness 10000) in paragraph at lines 526--527
+Underfull \hbox (badness 10000) in paragraph at lines 511--513
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
 
  []
 
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 542.
+(amsmath)                trying to recover with `aligned' on input line 532.
 
 
-Overfull \hbox (59.36919pt too wide) in alignment at lines 531--543
+Overfull \hbox (59.36919pt too wide) in alignment at lines 521--533
  [][][] []
  []
 
 
-Underfull \vbox (badness 5475) has occurred while \output is active []
+Underfull \vbox (badness 2359) has occurred while \output is active []
 
  [19]
-Underfull \hbox (badness 10000) in paragraph at lines 543--545
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 568--569
-
- []
-
-[20] <DT_output.jpg, id=437, 989.6975pt x 496.85625pt>
+[20] <DT_output.jpg, id=440, 989.6975pt x 496.85625pt>
 File: DT_output.jpg Graphic file (type jpg)
  <use DT_output.jpg>
-Package pdftex.def Info: DT_output.jpg used on input line 607.
+Package pdftex.def Info: DT_output.jpg used on input line 593.
 (pdftex.def)             Requested size: 390.0pt x 195.78981pt.
 
 [21] [22 <./DT_output.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 645--646
+Underfull \hbox (badness 10000) in paragraph at lines 656--657
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 682--683
+Underfull \hbox (badness 10000) in paragraph at lines 708--709
 
  []
 
 [24] [25] (Prediction-model-selection-for-telemarketing_report.bbl [26])
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 728--730
+Underfull \hbox (badness 10000) in paragraph at lines 754--756
 
  []
 
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 732.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
 [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 732.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
  (Prediction-model-selection-for-telemarketing_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 732.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 732.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
 Package rerunfilecheck Info: File `Prediction-model-selection-for-telemarketing
 _report.out' has not changed.
-(rerunfilecheck)             Checksum: 4B00C2BBEF676FE9C71362B57B993A45;2354.
+(rerunfilecheck)             Checksum: 6E286CD5C4199E4BCFAFB24F2DF86C20;2437.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 732.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9897 strings out of 493333
- 141028 string characters out of 3139191
+ 9929 strings out of 493333
+ 141531 string characters out of 3139191
  376287 words of memory out of 3000000
- 13075 multiletter control sequences out of 15000+200000
+ 13080 multiletter control sequences out of 15000+200000
  14626 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,16n,43p,1118b,3482s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -718,9 +719,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmtt8.pfb>
 Output written on Prediction-model-selection-for-telemarketing_report.pdf (28 p
-ages, 513339 bytes).
+ages, 522089 bytes).
 PDF statistics:
- 597 PDF objects out of 1000 (max. 8388607)
- 233 named destinations out of 1000 (max. 500000)
- 267 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 632 PDF objects out of 1000 (max. 8388607)
+ 260 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 

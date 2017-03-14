@@ -106,15 +106,9 @@ Supervisor:&Alla Petukhina and Ya Qian\\
     \newpage
     \pagestyle{fancy}\lhead{Introduction}
     \section{Introduction}
-\noindent Nowadays, gigantic amounts of data are available. Therefore, companies in almost all kinds of industries engage in the exploitation of data to obtain competitive advantages over rivals\citep{provost2013data}.\\
-The blah technological progress of computers and digitization of businesses makes corporations able to engage directly with customers, collecting and mining information about them, in order to tailor their products in a more optimal way\citep{rust2010rethinking}.\\ 
-[\baselineskip]\indent
-In particular, in the area of marketing the technologic developments enable a rethinking of marketing strategies by analyzing available data and customer metrics \citep{moro2014data}. \\
-This is exactly what this paper will be aiming at. Optimizing the marketing efforts of the company using data mining.\\
-In this paper, we focus on optimization models that increase company revenue by offering new products to existing customers. Models for data analysis are more suited for increasing revenue through existing customers than for acquiring new customers, because more information is available on the already existing customers \citep{nobibon2011optimization}. The knowledge of historical data allows the company to implement response models, to predict the probability that a customer will accept the offer of a certain product or service. In the retail banking industry, the banks have access to some of the richest datasets in the world of business \citep{nobibon2011optimization}. This should enable banks to target their marketing efforts towards customers that are more likely to accept the marketed products, which leads to lower marketing costs and increased profit.\\
-In this paper, we study data related to a telemarketing campaign by a Portuguese Bank in the period of 2008-2010. Specifically we want to show that the bank can succesfully classify their customers as “accepters” or “decliners” of an offer made through a telemarketing campaign.\\
-Several models can do such a classification task. In this paper, we use the Logistic Regression, Decision Trees, Random Forest and Neural Network.
-The logistic regression and decision trees have the advantage that they make it easy to interpret which variables affect the classification probability. Random forest and neural network have the advantage that they can model highly complex nonlinear relations which tend to make these two models more accurate compared to the logistic regression and decision trees. However, due to the complexity of these models they are difficult to interpret and understand.\\
+\noindent Nowadays, gigantic amounts of data are available. Therefore, companies in almost all kinds of industries engage in the exploitation of data to obtain competitive advantages over rivals \citep{provost2013data}.The technological progress of computers and digitization of businesses makes corporations able to engage directly with customers, collecting and mining information about them, in order to tailor their products in a more optimal way \citep{rust2010rethinking}.In particular, in the area of marketing the technological developments enable a rethinking of marketing strategies by analyzing available data and customer metrics \citep{moro2014data}. This is exactly what this paper will be aiming at. Optimizing the marketing efforts of the company using data mining.\\
+[\baselineskip]\indent In this paper, we focus on optimization models that increase company revenue by offering new products to existing customers. Models for data analysis are more suited for increasing revenue through existing customers than for acquiring new customers, because more information is available on the already existing customers \citep{nobibon2011optimization}. The knowledge of historical data allows the company to implement response models, to predict the probability that a customer will accept the offer of a certain product or service. In the retail banking industry, the banks have access to some of the richest datasets in the world of business \citep{nobibon2011optimization}. This should enable banks to target their marketing efforts towards customers that are more likely to accept the marketed products, which leads to lower marketing costs and increased profit.\\
+[\baselineskip]\indent In this paper, we study data related to a telemarketing campaign by a Portuguese Bank in the period of 2008-2010. Specifically we want to show that the bank can succesfully classify their customers as “accepters” or “decliners” of an offer made through a telemarketing campaign.Several models can do such a classification task, we use the Logistic Regression, Decision Trees, Random Forest and Neural Network. The logistic regression and decision trees have the advantage that they make it easy to interpret which variables affect the classification probability. Random forest and neural network have the advantage that they can model highly complex nonlinear relations which tend to make these two models more accurate compared to the logistic regression and decision trees. However, due to the complexity of these models they are difficult to interpret and understand.\\
 We fit all four models, and by using the AUC measure we conclude on which model does the most accurate predictions.
     \newpage
     \pagestyle{fancy}\lhead{Theory and Design}
@@ -146,7 +140,7 @@ We fit all four models, and by using the AUC measure we conclude on which model 
 	\subsubsection{Imbalanced data resampling}
 	\noindent A dataset is imbalanced if the classes are not approximately equally represented. Imbalanced
 	data sets exists in many real-world domains, such as telecommunications management, detection of fraudulent telephone, detection of oil spills in satellite images and so on. In these domains, what we are really interested in is the minority class other than the majority class. Thus, we need a fairly high prediction for the minority class. \\
-	[\baselineskip]\noindent There are two main ways addressed the issue of class imbalance.	One is cost sensitive learning, the other is to re-sample the original dataset. Here we introduce an approach, SMOTE(Synthetic Minority Class Oversampling), which blends under-sampling of the majority class with a special form of over-sampling the minority class.\citep{smote}
+	[\baselineskip]\indent There are two main ways addressed the issue of class imbalance.	One is cost sensitive learning, the other is to re-sample the original dataset. Here we introduce an approach, SMOTE(Synthetic Minority Class Oversampling), which blends under-sampling of the majority class with a special form of over-sampling the minority class.\citep{smote}
 	 \begin{itemize}
 		\item For each minority class \boldmath$ x_{i} $
 			\begin{itemize}
@@ -180,13 +174,10 @@ x_{new} =  x_{i} + (x_{i}-x_{ij})*\delta \\
     	\subsubsection{Decision Tree Model}
             \noindent Decision tree induction algorithms have long been popular in machine learning, statistics, and other disciplines for solving classification and related tasks. Decision Tree models where the target variable is a factor are called classification trees. In the classification tree structures, leaves represent class labels and branches represent conjunctions of features that lead to those class labels. Each node represent an splitting rule based on the value of one specific input variable, which is calculated by recursive partitioning. The recursion is completed when splitting no longer adds value to the predictions. This process of top-down induction of decision trees (TDIDT) \citep{quinlan} is an example of a greedy algorithm.
     	\subsubsection{Random Forest Model}
-    	Random forest is a learning method, which is based on an ensemble of decision trees. It is mainly used for classification and regression problems. There are varied methods to grow random forests but the most popular one is the method published by Breiman in 2001 \cite{Breiman2001}. It has a higher performance and better results in compare to other methods \cite{4016560}. 
-The random forest method generates a lot of classifiers and aggregate the results. In the end, a weighted vote is taken for prediction. The decision trees are created on a bootstrap sample of the training data set. The method is like \textbf{b}ootstrap \textbf{agg}regat\textbf{ing} (Bagging) \cite{Breiman96}.The successive decision trees are not related to each other. They are based on a bootstrap sample of the data set. In the end, a simple
-majority vote is taken for prediction.
-
-The construction of standard decision trees, is seperating each node and using the best split among all variables. Breimans method splits on each node using the best among a subset of predictors randomly chosen at that node. Breiman showed, that the random forest model is robust to overfitting. So it is not affected, if great number of trees are used for creating the forest.\cite{Breiman2001}.
-
-A general random forest can be implemented based on the following algorithm (see alg. \ref{alg:alg_rf}).\\
+    	\noindent Random forest is a learning method, which is based on an ensemble of decision trees. It is mainly used for classification and regression problems. There are varied methods to grow random forests but the most popular one is the method published by Breiman in 2001 \cite{Breiman2001}. It has a higher performance and better results in compare to other methods \cite{4016560}. \\
+    	 [\baselineskip]\indent The random forest method generates a lot of classifiers and aggregate the results. In the end, a weighted vote is taken for prediction. The decision trees are created on a bootstrap sample of the training data set. The method is like \textbf{b}ootstrap \textbf{agg}regat\textbf{ing} (Bagging) \cite{Breiman96}.The successive decision trees are not related to each other. They are based on a bootstrap sample of the data set. In the end, a simple majority vote is taken for prediction.\\
+    	  [\baselineskip]\indent The construction of standard decision trees, is seperating each node and using the best split among all variables. Breimans method splits on each node using the best among a subset of predictors randomly chosen at that node. Breiman showed, that the random forest model is robust to overfitting. So it is not affected, if great number of trees are used for creating the forest.\cite{Breiman2001}.\\
+    	   [\baselineskip]\indent A general random forest can be implemented based on the following algorithm (see alg. \ref{alg:alg_rf}).\\
 
 \begin{algorithm}[H]
  Select the number of models to build, $m$\\
@@ -207,9 +198,8 @@ A general random forest can be implemented based on the following algorithm (see
 Each generated decision tree give a prediction for a new sample. The random forest prediction results on the average of the $m$ tree predictions.  
     	
     	\subsubsection{Neural Network Model}
-    	\noindent Neural Network models are mathematical models that are, loosely put, based on how the biological brain works \citep{baesens2003using}. This allows for highly complex nonlinear relationships between the input and the predicted variables. 
-    	A neural network is a system of neurons. Each individual neuron is simple. It receives an input, process it and generates an output. Though each neuron is by itself simple, a network of neurons can produce very complex and intelligent calculations \citep{shiffman2012nature}. 
-    	A neural network typically consists of three layers. An input layer, a hidden layer and an output layer. The need for only three layers is known as the universal approximation theorem and states that a neural network with three layers can approximate any continuous function to arbitrary degrees of accuracy \citep{hornik1989multilayer}.
+    	\noindent Neural Network models are mathematical models that are, loosely put, based on how the biological brain works \citep{baesens2003using}. This allows for highly complex nonlinear relationships between the input and the predicted variables. \\
+    	 [\baselineskip]\indent A neural network is a system of neurons. Each individual neuron is simple. It receives an input, process it and generates an output. Though each neuron is by itself simple, a network of neurons can produce very complex and intelligent calculations \citep{shiffman2012nature}. A neural network typically consists of three layers. An input layer, a hidden layer and an output layer. The need for only three layers is known as the universal approximation theorem and states that a neural network with three layers can approximate any continuous function to arbitrary degrees of accuracy \citep{hornik1989multilayer}.\\
     \subsection{Model Performance Evaluation}
     \noindent A class can be assigned from a probabilistic outcome by assigning a threshold $D$, such that event $c$ is true if $P\left(c| x_k\right)>D$. The receiver operating characteristic (ROC) curve shows the performance of a two class classifier across the range of possible threshold (D) values, plotting one minus the specificity versus the sensitivity\citep{tom2006an}. The overall accuracy is given by the area under the curve ($AUC = \int_0^1ROC \mathrm{d}D$), measuring the degree of discrimination that can be obtained from a given model. AUC is a classification index\citep{david2011performance} that presents advantages of being independent of the class frequency or specific false positive/negative costs. The ideal method should present an AUC of 1.0, while an AUC of 0.5 denotes a random classifier.
     
@@ -248,6 +238,7 @@ newdata= ubSMOTE(X,Y, k = 5,
      \end{lstlisting}
      Above codes shows how we implement the SMOTE algorithm using the package "unbalanced". From line 4 to 7, function ubSMOTE() is called. First we specify the input variables X and response variable Y from the imbalanced dataset. The parameter K defines the numbers of nearst neighbors which are randomly choose. The scaling parameter per.over and perc.under control the amount of over-sampling of the minority class and under-sampling of the majority classes, respectively. For instance, if per.over = 200, per.under = 100, it means $200/100 = 2$ new minority samples will be generated for each minority sample. And at the same time, $100/100 *2 = 2 $ majority samples will be randomly chosen from the majority samples. 
     \subsection{Prediction Models}
+     \subsubsection{Logit Regression Model}
     \noindent The core codes in this part divides into two part, one is settings for prediction model,the other one is prediction model: 
    \begin{lstlisting}
 cvCtrl <- trainControl(method="cv",number,classProbs=TRUE,summaryFunction=twoClassSummary,verboseIter=TRUE)
@@ -277,14 +268,11 @@ prediction <- predict(tree ,newdata = test, type = "prob")
     \end{lstlisting}
 
      \noindent We use the package rpart, which implement the popular non-parametric CART algorithm. \\
-     [\baselineskip]\noindent Parameters defined in line 3 is to pre-prune the tree in case the tree grows to large. We set three stopping criterions. The minsplit parameter is the smallest number of observations in the parent node that could be split further. The parameter minbucket provides the smallest number of observations that are allowed in a terminal node. And maxdepth parameter defined a certain depth of the tree from root to leafs. \\
-     [\baselineskip]\noindent From line 6 to 9, we build the decision tree model using function rpart(). As we are building a classification tree, so we choose the parameter method = "class". The parameter parms defines the splitting function. The splitting index can be "Gini" or "Information", which are two functions to calculate the Impurity of each node. “Gini” will tend to find the largest class, and “Information” \begin{flushleft}
-     
-     \end{flushleft}tends to find groups of classes that make up ~50\% of the data.(detail calculation and equation in \citep{terry})\\
-     [\baselineskip]\noindent In line 12, the predict function will return the probability of each classes as we define the parameter type = "prob".
+     [\baselineskip]\indent Parameters defined in line 3 is to pre-prune the tree in case the tree grows to large. We set three stopping criterions. The minsplit parameter is the smallest number of observations in the parent node that could be split further. The parameter minbucket provides the smallest number of observations that are allowed in a terminal node. And maxdepth parameter defined a certain depth of the tree from root to leafs. \\
+     [\baselineskip]\indent From line 6 to 9, we build the decision tree model using function rpart(). As we are building a classification tree, so we choose the parameter method = "class". The parameter parms defines the splitting function. The splitting index can be "Gini" or "Information", which are two functions to calculate the Impurity of each node. “Gini” will tend to find the largest class, and “Information” tends to find groups of classes that make up ~50\% of the data.(detail calculation and equation in \citep{terry})\\
+     [\baselineskip]\indent In line 12, the predict function will return the probability of each classes as we define the parameter type = "prob".
      \subsubsection{Random Forest Model}
-     The "mlr'' package is used to build the random forest model in $R$. The package offers a object oriented structure and 
-The larger the forest more computational burden. 
+     \noindent The ''mlr'' package is used to build the random forest model in $R$. The package offers a object oriented structure and is good for parallel computing. This is necessary because the larger the forest the more computational burden. 
 \begin{lstlisting}
 cvDesc <- makeResampleDesc(method = "CV", iters = 5, stratify = T)
 rf.lrn = makeLearner("classif.h2o.randomForest",
@@ -295,21 +283,22 @@ rf.PS = makeParamSet(
     makeDiscreteParam("mtries", values = seq(1,10,1))
     )
 \end{lstlisting}
-Line 1 of the code defines the cross validation with 5 folds. In line 2 the learner is defined as a random forest classifier which is build on the h2o framework.
-In line 6-7 the parameters for the amount of trees and no of splits are set. 
+Line 1 of the code defines the cross validation with 5 folds. In line 2 the learner is defined as a random forest classifier which can be built on the h2o instance.
+In line 6-7 the parameters for the amount of trees and number of splits in each decision tree are set. 
 
 \begin{lstlisting}
 h2o.init(nthreads = -1)
-
 rf.para <- tuneParams(rf.lrn, task = bank.train, resampling = cvDesc, par.set = rf.PS, control = tune.ctrl, measures = auc)
 h2o.shutdown()
 library(kernlab)
 lrn = setHyperPars(rf.lrn, par.vals = rf.para$x)
 rf.mod <- mlr::train(lrn,task = bank.train)
 \end{lstlisting}
+Line 1 is creating a h2o instance using all the threads of the server (Intel Xeon E5-2670 @ 2.6 GHz). In this instance the the tuneParams function is running, to find the best parameters, which are defined in rf.PS. The last line is training the model with the optimal parameters.
+
      \subsubsection{Neural Network Model}
         \noindent The neural network can be trained in three different ways; supervised learning, unsupervised learning and reinforcement learning. Supervised learning can be used when one already has a dataset containing the answers to the question that we want to predict, and this is the training method that will be used in this paper.\\
-     The model attempts to predict outcomes, initiating this procedure with random weights. The errors of the predicted outcomes are then calculated and fed backwards through the model and used to update the weights. Through this process, the weights of the network are updated in such a way that the neurons recognise different patterns of the input space. This process continues until the weights have been optimally set or a maximum number of iterations have been reached. This process is called ‘backward propagation’. Backward propagation requires that the activation functions are differentiable. The standard approach is to use a sigmoid function such as a logit regression.\\
+        [\baselineskip]\indent The model attempts to predict outcomes, initiating this procedure with random weights. The errors of the predicted outcomes are then calculated and fed backwards through the model and used to update the weights. Through this process, the weights of the network are updated in such a way that the neurons recognise different patterns of the input space. This process continues until the weights have been optimally set or a maximum number of iterations have been reached. This process is called ‘backward propagation’. Backward propagation requires that the activation functions are differentiable. The standard approach is to use a sigmoid function such as a logit regression.\\
      [\baselineskip]\indent To train the neural network model in R, we make use of the 'caret' package. We first use the 'trainControl' function to specify the options of the neural network algorithm.:
      \begin{lstlisting}
 model.control<- trainControl(
@@ -461,16 +450,15 @@ newdata = ubSMOTE(data_train[,-20],data_train[,20],
 		perc.under = 100*un_s,
 		verbose = FALSE)
 \end{lstlisting}
-\begin{itemize}
-	\item \textbf{Input Description}
-\end{itemize}
+
    		\begin{itemize}
    		\item \textbf{Expected Output}
-   		We will get the balanced traininng set with approximately 50\% of positive response samples. And the prediction is assumed to be improved with the model trained by balanced data.  
    		\end{itemize}
-   	   	\begin{itemize}
+   		 \noindent We will get the balanced traininng set with approximately 50\% of positive response samples. And the prediction is assumed to be improved with the model trained by balanced data.  
+   	  	\begin{itemize}
    		\item \textbf{Actual Output}
    		\end{itemize}
+   	\noindent As we can see in table 2, the dataset before balancing is quite skewed. However, after balancing, the ratio of ''yes'' and ''no''is quite close t0 50 to 50. 
    	  \begin{center}
    		\begin{table}[!htbp]
    			\centering  
@@ -489,9 +477,12 @@ newdata = ubSMOTE(data_train[,-20],data_train[,20],
    			\caption{Data balancing comparison} 
    		\end{table}
    	\end{center}
+    
    	   	\begin{itemize}
-		\item \textbf{Comments}
-		\end{itemize}
+   	   	\item \textbf{Comments}
+   	   \end{itemize}
+      The balancing technique is only used on train dataset rather than test dataset. Balancing helps to improve the accuracy of prediction models, while prediction on test dataset should sticks to the original data structure. 
+   	  
        \subsection{Building Prediction Models}
        \subsubsection{Logit Regression Model}
        \begin{itemize}
@@ -517,13 +508,12 @@ plot.roc(logit.test.roc)
        \begin{itemize}
        \item \textbf{Input Description}
        \end{itemize}
-       \noindent The logit regression model requires all factor variables, i.e., categorical variables, need to be changed into dummy variables. As the function above shows, all factor variables are changed by dummyVars function. As a result, there are 55 variables in the new dataset $"bank.train.dummy"$. The test dataset is also transformed with the same code. \\
-       [\baselineskip]\indent To implement logit regression modeling, the report adopts train function provided by caret package in R, then specifies the method as $"glm"$ and family as $"binomial"("logit")$. Cross validation is chosen to improve model accuracy. Meanwhile, the dataset is requited to be standardized before logistic analysis, which is also achieved within the train function. \\
-       [\baselineskip]\indent After the model is derived, it is evaluated by comparing its prediction with real customer behavior. \\
+       \noindent The logit regression model requires all factor variables, i.e., categorical variables, need to be changed into dummy variables. As the function above shows, all factor variables are changed by dummyVars function. As a result, there are 55 variables in the new dataset $"bank.train.dummy"$. The test dataset is also transformed with the same code.\\
+       [\baselineskip]\indent To implement logit regression modeling, the report adopts train function provided by caret package in R, then specifies the method as $"glm"$ and family as $"binomial"("logit")$. Cross validation is chosen to improve model accuracy. Meanwhile, the dataset is requited to be standardized before logistic analysis, which is also achieved within the train function. After the model is derived, it is evaluated by comparing its prediction with real customer behavior.\\
        \begin{itemize}
        	\item \textbf{Expected Output}
        \end{itemize}
-   A binary logit analysis is expected to yield the relationship between each predictor variable and the target variable, considering other predictor variables hold still. Additionally, comparing predicted result with real result, the report also expect to evaluate how good the model is. An AUC index and an ROC curve are also expected to evaluate how well the logistic model works with future data.\\   
+   A binary logit analysis is expected to yield the relationship between each predictor variable and the target variable, considering other predictor variables hold still. Additionally, comparing predicted result with real result, the report also expect to evaluate how good the model is. An AUC index and an ROC curve are also expected to evaluate how well the logistic model works with future data.
 \begin{itemize}
 	\item \textbf{Actual Output}
 \end{itemize}
@@ -541,7 +531,7 @@ plot.roc(logit.test.roc)
   + &0.07\ast{cons.conf.idx}+0.70\ast{euribor3m}+-0.65\ast{nr.employed}
   \end{split}
   \end{eqnarray}
-How good is the derived model? The matrix in table 2 compares the prediction made by the model with real customer behavior: in train dataset, of 14724 customers who actually deposited, the model predicts 10605 ones correctly, while it predicts 4119 are potential customers while the fact is opposite. Meanwhile, the model predicts 2624 customers will buy the product while they actually did not. In test dataset, the model predict 6506 cases correctly(624 customers who says yes, and 5882 customers says no). Based on the confusion matrix, ROC curve in Figure 2 is created to evaluate the model visually. \\
+How good is the derived model? The matrix in table 2 compares the prediction made by the model with real customer behavior: in train dataset, of 14724 customers who actually deposited, the model predicts 10605 ones correctly, while it predicts 4119 are potential customers while the fact is opposite. Meanwhile, the model predicts 2624 customers will buy the product while they actually did not. In test dataset, the model predict 6506 cases correctly(624 customers who says yes, and 5882 customers says no). Based on the confusion matrix, ROC curve in Figure 2 is created to evaluate the model visually. 
   \begin{center}
   	\begin{table}[!htbp]
   		\centering  
@@ -580,22 +570,18 @@ dtm<-rpart(y~.,data=balancedTrain,parms=list(split="information"),  control=rpar
 rpart.plot(dtm,type=1, extra=104,
 cex = 0.55, fallen.leaves= FALSE, faclen = 3)
 # test the classifier in testing dataset
-pred_dtm <- predict(dtm,newdata=data_test,type = "prob")
+pred_dtm <- predict(dtm,newdata=bankclean_test,type = "prob")
 # set the threshold to see the Confusion Matrix
 threshold <- 0.5
 pred_class<-as.matrix(factor(ifelse(pred_dtm[,2]>threshold,"yes","no")))
 confusionMatrix(pred_class, data_test$y,positive = "yes")
 	\end{lstlisting}
-	\begin{itemize}
-	\item \textbf{Input Description}
-	\end{itemize}
-	\indent Here we are building a classification tree as our response variable y is a factor. Since the decision tree can deal with both numerical and categorical variables, we can directly input the balanced training set. We choose to use "information" as splitting criteria, as most of the input variables are categorical variables. \\
-	[\baselineskip]\noindent After the model is trained, we will test it based on our testing set. And evaluate the prediction performance by calculating the confusion matrix with 0.5 threshold.
-	
+
 	 \begin{itemize}
 		\item \textbf{Expected Output}
 	 \end{itemize}
- 	 \indent As a result of model building,we will get an well-shaped binary tree decision algorithm, which is displayed as a flowchart like tree, where each split represent a "Yes/No" decision. For the prediction test, we will expect an accuracy than better 0,5.
+ 	\indent Here we are building a classification tree as our response variable y is a factor. Since the decision tree can deal with both numerical and categorical variables, we can directly input the balanced training set. We choose to use "information" as splitting criteria, as most of the input variables are categorical variables. After the model is trained, we will test it based on our testing set. And evaluate the prediction performance by calculating the confusion matrix with 0.5 threshold.\\
+ 	[\baselineskip]\noindent  As a result of model building,we will get an well-shaped binary tree decision algorithm, which is displayed as a flowchart like tree, where each split represent a "Yes/No" decision. For the prediction test, we will expect an accuracy than better 0,5.
  
 	 \begin{itemize}
  		\item \textbf{Actual Output}
@@ -605,7 +591,7 @@ confusionMatrix(pred_class, data_test$y,positive = "yes")
 			[width=1\linewidth]
 %[scale=0.5]
 			{DT_output}
-			\caption{}
+			\caption{Decision Tree}
 			\label{fig:104adjdt}
 		\end{figure}
 		\begin{center}
@@ -614,13 +600,13 @@ confusionMatrix(pred_class, data_test$y,positive = "yes")
 				\begin{tabular}{llc}
 					\hline
 					\hline\\[-1.8ex]
-					& \multicolumn{2}{c}{Reference(Traindata/Testdata)} \\
+					& \multicolumn{2}{c}{Reference(specificity/sensitivity)} \\
 					\cline{2-3}\\[-1.8ex]
 					Prediction & No & Yes \\
 					\hline \\[-1.8ex] 
-					No & 6572\textcolor{red}{(0.9)} &454 \\ 
+					No & 6572\textcolor{red}{(90\%)} &454 \\ 
 					\hline \\[-1.8ex] 
-					Yes& 706 &505 \textcolor{red}{(0.53)} \\ 
+					Yes& 706 &505 \textcolor{red}{(52.6\%)} \\ 
 					\hline
 					\hline
 				\end{tabular} 
@@ -635,6 +621,31 @@ confusionMatrix(pred_class, data_test$y,positive = "yes")
   		[\baselineskip]\noindent From the confusion matrix showed in Table 3, we can evaluate the prediction performance of the decision tree model. A generally accuracy of 85.9\% is arrived, composed with 90\% specificity and 52.6\% sensitivity, which indicates that its more difficult to predict the positive result from decision tree model. 
   		
  \subsubsection{Random Forest}
+ \begin{itemize}
+		\item \textbf{Function}
+	\end{itemize}
+	
+	\begin{lstlisting}
+bank.train <- makeClassifTask(data = train,target="y", positive = "yes")  #Creating a Classification Task based on the balanced train dataset
+bank.test <- makeClassifTask(data = bank_test,target="y", positive = "yes")  #Creating a Classification Task based on the balanced train dataset
+tune.ctrl <- makeTuneControlGrid(tune.threshold = TRUE)
+cvDesc <- makeResampleDesc(method = "CV", iters = 5, stratify = T)
+rf.lrn = makeLearner("classif.h2o.randomForest",
+                          predict.type = "prob",
+                          fix.factors.prediction = TRUE)
+rf.PS = makeParamSet(
+    makeDiscreteParam("ntrees", values = seq(500,1000,500)),
+    makeDiscreteParam("mtries", values = seq(1,10,1))
+)
+h2o.init(nthreads = -1)
+rf.para <- tuneParams(rf.lrn, task = bank.train, resampling = cvDesc, par.set = rf.PS, control = tune.ctrl, measures = auc)
+h2o.shutdown()
+library(kernlab)
+lrn = setHyperPars(rf.lrn, par.vals = rf.para$x)
+rf.mod <- mlr::train(lrn,task = bank.train)
+yhat.rf <- predict(rf.mod, task = bank.train)
+predict.rf <- predict(rf.mod, task = bank.test)
+	\end{lstlisting}
   	\begin{itemize}
   		\item \textbf{Input Description}
   	\end{itemize}
@@ -646,7 +657,7 @@ confusionMatrix(pred_class, data_test$y,positive = "yes")
   	\begin{itemize}
   		\item \textbf{Actual Output}
   	\end{itemize}
-  	\noindent The confusion matrix shows the results of the random forest predictions on the train and test dataset (see tab. \ref{tab:confmatrix_rf}).
+  	\noindent The confusion matrix shows the results of the random forest predictions on train and test dataset (see table 5). The AUC of the prediction on train dataset is 0.999 and on test dataset 0.7946.
 \begin{figure}
 \centering
 \end{figure}
@@ -669,9 +680,24 @@ confusionMatrix(pred_class, data_test$y,positive = "yes")
 \caption{Confusion matrix of random forest model} 
 \label{tab:confmatrix_rf}
 \end{table}
-\end{center}
-  	
+\end{center}  
+	\begin{itemize}
+  		\item \textbf{Comment}
+  	\end{itemize}	
+The Random Forest could be more precise if the amount of created trees are increased. The problem is that the computation time is also accumulating accordingly while the accuracy is only improved to a relatively small extent. 
   	\subsubsection{Neural Network}
+  	 \begin{itemize}
+  		\item \textbf{Function}
+  	\end{itemize}
+  	
+  	\begin{lstlisting}
+nn <- train(y~., data = balancedTrain,  
+method = "nnet", 
+maxit = 500, 
+trace = FALSE, # options for nnet function
+tuneGrid = nn.parms, # parameters to be tested
+metric = "ROC", trControl = model.control)
+  	\end{lstlisting}
   	\begin{itemize}
   		\item \textbf{Input Description}
   	\end{itemize}
@@ -683,7 +709,7 @@ confusionMatrix(pred_class, data_test$y,positive = "yes")
   	\begin{itemize}
   		\item \textbf{Actual Output}
   	\end{itemize}
-  	\noindent After resampling across the grid of different parameters the best model in terms of achieved AUC is a model with thirteen nodes in the hidden layer and a weight decay of 1. This model achieves an AUC of approx. 0.92.\\
+  	\noindent After resampling across the grid of different parameters the best model in terms of achieved AUC is a model with thirteen nodes in the hidden layer and a weight decay of 1. This model achieves an AUC of approx. 0.7866.\\
   	Setting a threshold of 0.50 gives the below confusion matrix.
 %\begin{figure}[htbp] 
 %\centering
@@ -697,13 +723,13 @@ confusionMatrix(pred_class, data_test$y,positive = "yes")
 	\begin{tabular}{llc}
 		\hline
 		\hline\\[-1.8ex]
-		& \multicolumn{2}{c}{True Outcome} \\
+		& \multicolumn{2}{c}{Reference} \\
 		\cline{2-3}\\[-1.8ex]
 		Prediction & No & Yes \\
 		\hline \\[-1.8ex] 
-		No & 2622 & 519 \\ 
+		No & 6546 & 432 \\ 
 		\hline \\[-1.8ex] 
-		Yes& 262 & 2386\\ 
+		Yes& 732 & 527\\ 
 		\hline
 		\hline
 	\end{tabular}  
@@ -714,9 +740,9 @@ confusionMatrix(pred_class, data_test$y,positive = "yes")
  \pagestyle{fancy}\lhead{Conclusion}
  \section{Conclusion}
  \noindent In this paper, we have applied four different data analysis techniques on a recent dataset from a Portuguese bank, in order to predict customer behavior. A logit regression, a decision tree, a random forest and a neural network was applied. The goal was to predict whether customers would agree to open a fixed term deposit upon receiving a phonecall from the marketing department. The prediction was attempted based on customer characteristics and a few socioeconomic variables.\\
- The four models were primarily compared by two metrics: the area under the receiver operating characteristic curve (AUC) and confusion tables. For both metrics the neural network had the best performance, which is in line with what we expected. The neural network achieved an AUC of 0.92 which is very high performance. By looking at the logit regression and decision tree it is apparent that the socioeconomic variables are very important in explaining which customers accept and which do not. For example, the decision tree show that the two most important variables are the three month euribor rate (euribor3m) and the consumer price index (cons.price.idx). This suggests that it is the socioeconomic variables rather than individual specific characteristics that determine the behavior of the customers.\\
- Future research should investigate the predictive power of the models across larger time periods, allowing for more variation in the socioeconomic variables.\\
- Summing up, this paper demonstrates that data mining techniques are effectively able to assist companies in targetting the potential customers that are most inclined to accept a given offer. 
+ 	[\baselineskip]\indent The four models were primarily compared by two metrics: the area under the receiver operating characteristic curve (AUC) and confusion tables. For both metrics the neural network had the best performance, which is in line with what we expected. The Random Forest achieved an AUC of 0.7946 which is very high performance. By looking at the logit regression and decision tree it is apparent that the socioeconomic variables are very important in explaining which customers accept and which do not. For example, the decision tree show that the two most important variables are the three month euribor rate (euribor3m) and the consumer price index (cons.price.idx). This suggests that it is the socioeconomic variables rather than individual specific characteristics that determine the behavior of the customers.\\
+ [\baselineskip]\indent Future research should investigate the predictive power of the models across larger time periods, allowing for more variation in the socioeconomic variables.\\
+[\baselineskip]\indent Summing up, this paper demonstrates that data mining techniques are effectively able to assist companies in targetting the potential customers that are most inclined to accept a given offer. 
  \newpage
 \pagestyle{fancy}\lhead{References}
 \bibliographystyle{apalike}

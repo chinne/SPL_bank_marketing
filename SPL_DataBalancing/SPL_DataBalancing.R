@@ -33,4 +33,4 @@ balancedTrain$previous = round(balancedTrain$previous)
 
 summary(balancedTrain$y)
 
-write.csv(balancedTrain, "balancedTrain.csv")
+write.csv(balancedTrain, "balancedTrain.csv", row.names = FALSE)

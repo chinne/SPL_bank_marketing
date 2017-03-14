@@ -1,4 +1,5 @@
-
+balancedTrain <- read.csv("balancedTrain.csv", header = TRUE, sep = "," )
+bankclean_test <- read.csv("bankclean_test.csv", header = TRUE, sep = ",")
 
 
 ##################################  Logit Regression   ################################

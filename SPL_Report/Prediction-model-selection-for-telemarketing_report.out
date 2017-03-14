@@ -14,19 +14,20 @@
 \BOOKMARK [3][-]{subsubsection.3.1.1}{Data Imputation}{subsection.3.1}% 14
 \BOOKMARK [3][-]{subsubsection.3.1.2}{Data Balancing}{subsection.3.1}% 15
 \BOOKMARK [2][-]{subsection.3.2}{Prediction Models}{section.3}% 16
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Decision Tree Model}{subsection.3.2}% 17
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Random Forest Model}{subsection.3.2}% 18
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Neural Network Model}{subsection.3.2}% 19
-\BOOKMARK [2][-]{subsection.3.3}{Model Performance Evaluation}{section.3}% 20
-\BOOKMARK [1][-]{section.4}{Empirical Study/Testing}{}% 21
-\BOOKMARK [2][-]{subsection.4.1}{Data Input and Description}{section.4}% 22
-\BOOKMARK [2][-]{subsection.4.2}{Data Pre-processing}{section.4}% 23
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Missing Value Pattern Overview}{subsection.4.2}% 24
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Data Imputation}{subsection.4.2}% 25
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Data Balancing}{subsection.4.2}% 26
-\BOOKMARK [2][-]{subsection.4.3}{Building Prediction Models}{section.4}% 27
-\BOOKMARK [3][-]{subsubsection.4.3.1}{Logit Regression Model}{subsection.4.3}% 28
-\BOOKMARK [3][-]{subsubsection.4.3.2}{Decision Tree Model}{subsection.4.3}% 29
-\BOOKMARK [3][-]{subsubsection.4.3.3}{Random Forest}{subsection.4.3}% 30
-\BOOKMARK [3][-]{subsubsection.4.3.4}{Neural Network}{subsection.4.3}% 31
-\BOOKMARK [1][-]{section.5}{Conclusion}{}% 32
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Logit Regression Model}{subsection.3.2}% 17
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Decision Tree Model}{subsection.3.2}% 18
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Random Forest Model}{subsection.3.2}% 19
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Neural Network Model}{subsection.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.3}{Model Performance Evaluation}{section.3}% 21
+\BOOKMARK [1][-]{section.4}{Empirical Study/Testing}{}% 22
+\BOOKMARK [2][-]{subsection.4.1}{Data Input and Description}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.2}{Data Pre-processing}{section.4}% 24
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Missing Value Pattern Overview}{subsection.4.2}% 25
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Data Imputation}{subsection.4.2}% 26
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Data Balancing}{subsection.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.3}{Building Prediction Models}{section.4}% 28
+\BOOKMARK [3][-]{subsubsection.4.3.1}{Logit Regression Model}{subsection.4.3}% 29
+\BOOKMARK [3][-]{subsubsection.4.3.2}{Decision Tree Model}{subsection.4.3}% 30
+\BOOKMARK [3][-]{subsubsection.4.3.3}{Random Forest}{subsection.4.3}% 31
+\BOOKMARK [3][-]{subsubsection.4.3.4}{Neural Network}{subsection.4.3}% 32
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 33

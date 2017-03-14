@@ -1,7 +1,7 @@
-train <- read.csv("balancedTrain.csv", header = TRUE, sep = ",", )
-bankclean <- read.csv("bankclean.csv", header = TRUE, sep = ",")
+train <- read.csv("balancedTrain.csv", header = TRUE, sep = "," )
+bankclean <- read.csv("bankclean_test.csv", header = TRUE, sep = ",")
 bankclean$X <- NULL
-
+write.csv(train, "balancedTrain2.csv", row.names=FALSE)
 #################################   splitting data   ###############################
 set.seed(124)
 n <- nrow(bankclean) 
@@ -9,7 +9,6 @@ sample.size <- ceiling(n*0.8)
 idx.train <- sample(n, sample.size) 
 bank_test <-  bankclean[-idx.train, ]
 
-train$X <- NULL
 train$y <- ifelse(train$y == 1, "yes", "no")
 train$y <- as.factor(train$y)
 

@@ -32,7 +32,6 @@ data_test = bank[-idx.train, ]
 # load the balanced training set and
 
 balancedTrain = read.csv("balancedTrain.csv")
-balancedTrain = balancedTrain[, -1]
 
 levels(balancedTrain$default) = levels(bank$default)
 

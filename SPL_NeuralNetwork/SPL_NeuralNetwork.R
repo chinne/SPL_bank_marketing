@@ -12,8 +12,6 @@ if(!require("hmeasure")) install.packages("hmeasure"); library("hmeasure")
 df <- read.csv("balancedTrain.csv",
                sep = ",")
 
-# Delete rownumber
-df$X  <- NULL
 # Delete default variable
 df$default <- NULL
 
