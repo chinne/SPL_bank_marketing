@@ -1,13 +1,5 @@
 train <- read.csv("balancedTrain.csv", header = TRUE, sep = "," )
 bankclean <- read.csv("bankclean_test.csv", header = TRUE, sep = ",")
-bankclean$X <- NULL
-write.csv(train, "balancedTrain2.csv", row.names=FALSE)
-#################################   splitting data   ###############################
-set.seed(124)
-n <- nrow(bankclean) 
-sample.size <- ceiling(n*0.8) 
-idx.train <- sample(n, sample.size) 
-bank_test <-  bankclean[-idx.train, ]
 
 train$y <- ifelse(train$y == 1, "yes", "no")
 train$y <- as.factor(train$y)
@@ -25,7 +17,7 @@ rf.lrn = makeLearner("classif.h2o.randomForest",
                      fix.factors.prediction = TRUE)
 
 rf.PS = makeParamSet(
-  makeDiscreteParam("ntrees", values = seq(500,1000,500)),
+  makeDiscreteParam("ntrees", values = seq(500,1000,500)),   #setting a range of parameters for random forest 
   makeDiscreteParam("mtries", values = seq(1,10,1))
 )
 
@@ -42,6 +34,7 @@ rf.mod <- mlr::train(lrn,task = bank.train)
 
 yhat.rf <- predict(rf.mod, task = bank.train)
 predict.rf <- predict(rf.mod, task = bank.test)
+
 #####Performance Measures################
 
 
