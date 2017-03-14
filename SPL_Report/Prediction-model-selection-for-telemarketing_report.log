@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.12)  14 MAR 2017 22:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.12)  14 MAR 2017 22:29
 entering extended mode
 **./Prediction-model-selection-for-telemarketing_report.tex
 (Prediction-model-selection-for-telemarketing_report.tex
@@ -507,10 +507,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--173
  []
 
 
-Package natbib Warning: Citation `Breiman96' on page 5 undefined on input line 
-178.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 177--181
 
  []
@@ -582,7 +578,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
 
-<MVP.jpeg, id=367, 953.06062pt x 364.36125pt>
+<MVP.jpeg, id=370, 953.06062pt x 364.36125pt>
 File: MVP.jpeg Graphic file (type jpg)
  <use MVP.jpeg>
 Package pdftex.def Info: MVP.jpeg used on input line 394.
@@ -650,55 +646,52 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--559
 
  []
 
-[20] <DT_output.jpg, id=440, 989.6975pt x 496.85625pt>
+[20] <DT_output.jpg, id=443, 989.6975pt x 496.85625pt>
 File: DT_output.jpg Graphic file (type jpg)
  <use DT_output.jpg>
 Package pdftex.def Info: DT_output.jpg used on input line 593.
 (pdftex.def)             Requested size: 390.0pt x 195.78981pt.
 
 [21] [22 <./DT_output.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 656--657
+Underfull \hbox (badness 10000) in paragraph at lines 657--658
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 708--709
+Underfull \hbox (badness 10000) in paragraph at lines 709--710
 
  []
 
 [24] [25] (Prediction-model-selection-for-telemarketing_report.bbl [26])
 [27]
-Underfull \hbox (badness 10000) in paragraph at lines 754--756
+Underfull \hbox (badness 10000) in paragraph at lines 755--757
 
  []
 
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 759.
 [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 759.
  (Prediction-model-selection-for-telemarketing_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 758.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 759.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 759.
 Package rerunfilecheck Info: File `Prediction-model-selection-for-telemarketing
 _report.out' has not changed.
-(rerunfilecheck)             Checksum: 6E286CD5C4199E4BCFAFB24F2DF86C20;2437.
+(rerunfilecheck)             Checksum: 3D23A15D9F9138307E9938E93B574C65;2425.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 758.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 759.
  )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 9929 strings out of 493333
- 141531 string characters out of 3139191
- 376287 words of memory out of 3000000
- 13080 multiletter control sequences out of 15000+200000
+ 9932 strings out of 493333
+ 141593 string characters out of 3139191
+ 375287 words of memory out of 3000000
+ 13082 multiletter control sequences out of 15000+200000
  14626 words of font info for 54 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,16n,43p,1118b,3482s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -719,9 +712,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmtt8.pfb>
 Output written on Prediction-model-selection-for-telemarketing_report.pdf (28 p
-ages, 522089 bytes).
+ages, 522330 bytes).
 PDF statistics:
- 632 PDF objects out of 1000 (max. 8388607)
- 260 named destinations out of 1000 (max. 500000)
+ 635 PDF objects out of 1000 (max. 8388607)
+ 261 named destinations out of 1000 (max. 500000)
  275 words of extra memory for PDF output out of 10000 (max. 10000000)
 

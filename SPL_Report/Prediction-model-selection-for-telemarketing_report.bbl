@@ -12,6 +12,11 @@ Banfield, R.~E., Hall, L.~O., Bowyer, K.~W., and Kegelmeyer, W.~P. (2007).
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
   29(1):173--180.
 
+\bibitem[Breiman, 1996]{Breiman1996}
+Breiman, L. (1996).
+\newblock Bagging predictors.
+\newblock {\em Machine Learning}, 24(2):123--140.
+
 \bibitem[Breiman, 2001]{Breiman2001}
 Breiman, L. (2001).
 \newblock Random forests.
