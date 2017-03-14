@@ -1,6 +1,6 @@
 Name of Quantlet: SPL_NeuralNetwork
 
-Published in: 'Statistical programming languages - Student Project on ''Prediction Model Selection for Bank Telemarketing'' '
+Published in: 'Statistical programming languages - Student Project on Prediction Model Selection for Bank Telemarketing'
 
 Description: 'Build the neural network model and test the prediction performance with Confusion Matrix and ROC'
 
@@ -10,4 +10,4 @@ Author: Yufang Yan, Christoph Linne, Xun Gong,  Emil Brodersen
 
 Datafile: balancedTrain.csv
 
-Output: ROC graph: NN_ROC_plot.pdf
+Output: ROC graph: SPL_NeuralNetwork1.pdf

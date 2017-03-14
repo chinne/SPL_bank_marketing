@@ -1,7 +1,7 @@
 
-Name of Quantlet: RandomForest
+Name of Quantlet: SPL_RandomForest
 
-Published in: Statistical programming languages
+Published in: 'Statistical programming languages - Student Project on Prediction Model Selection for Bank Telemarketing'
 
 Description: Random forest prediction based on the mlr package and h2o framework.
 
