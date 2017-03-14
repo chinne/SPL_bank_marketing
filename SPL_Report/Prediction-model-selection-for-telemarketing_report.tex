@@ -372,7 +372,8 @@ plot.roc(roc)
 		\caption{Predictor Variables}
     	\end{table}
         \end{center}
-        Variables "default" and “duration" are not included in the final analysis. There are only three respondents had default records, which led to exclusion of "default" due to very low variance \citep{max2016applied}. Variable "duration" describes last contact duration. However, this attribute highly affects the output target (e.g., if duration=0 then y="no"). Yet, the duration is not known before a call is performed. Also, after the end of the call "y" is obviously known. Thus, this input is discarded if the intention is to have a realistic predictive model.\\               
+        Variables "default" and “duration" are not included in the final analysis. There are only three respondents had default records, which led to exclusion of "default" due to very low variance \citep{max2016applied}. Variable "duration" describes last contact duration. However, this attribute highly affects the output target (e.g., if duration=0 then y="no"). Yet, the duration is not known before a call is performed. Also, after the end of the call "y" is obviously known. Thus, this input is discarded if the intention is to have a realistic predictive model.\\    
+        \vspace{1cm}           
          \subsection{Data Pre-processing}    
          \subsubsection{Missing Value Pattern Overview}    
           \begin{itemize}
@@ -398,6 +399,7 @@ mice_plot <- aggr(bank, col=c('navyblue','yellow'), numbers=TRUE, sortVars=TRUE,
          	\item \textbf{Comments}
          \end{itemize}
         \noindent According to the pattern showed in Figure 1,the missing value is missing at random(MAR). Therefore, the report decides to impute the missing value with MICE package in the next section.\\
+        \vspace{2cm}
          \subsubsection{Data Imputation}
          \begin{itemize}
          	\item \textbf{Function}
@@ -450,7 +452,7 @@ newdata = ubSMOTE(data_train[,-20],data_train[,20],
 		perc.under = 100*un_s,
 		verbose = FALSE)
 \end{lstlisting}
-
+\vspace{1cm}
    		\begin{itemize}
    		\item \textbf{Expected Output}
    		\end{itemize}
