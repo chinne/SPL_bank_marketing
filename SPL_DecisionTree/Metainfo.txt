@@ -1,0 +1,14 @@
+
+Name of Quantlet: SPL_DecisionTree
+
+Published in: 'Statistical programming languages - Student Project on Prediction Model Selection for Bank Telemarketing'
+
+Description: 'Build the decision tree model and test the prediction performance with Confusion Matrix and ROC'
+
+Keywords: decision tree, pre-pruning, repartition, confusion matrix
+
+Author: Yufang Yan, Christoph Linne, Xun Gong, Emil Brodersen
+
+Datafile: balancedTrain.csv, bankclean.csv
+
+Output: A well-shaped decision tree graph, SPL_DecisionTree1.jpg
