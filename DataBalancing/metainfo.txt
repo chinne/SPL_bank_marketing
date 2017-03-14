@@ -1,0 +1,14 @@
+
+Name of Quantlet: DataBalancing
+
+Published in: Statistical programming languages
+
+Description: Balancing the training set by resamping method SMOTE
+
+Keywords: Imbalanced data, Oversampling, Undersampling, SMOTE
+
+Author: Yufang Yan, Christoph Linne, Xun Gong,  Emil Brodersen
+
+Datafile: bankclean.csv
+
+Output: Balanced training set with appromaxietly 50% of positive responses
